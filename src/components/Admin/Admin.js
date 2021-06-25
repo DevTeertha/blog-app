@@ -4,7 +4,7 @@ import Login from './Login/Login';
 const Admin = () => {
     return (
         <>
-            <Login></Login>
+            <h1>I am admin</h1>
         </>
     );
 };

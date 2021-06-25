@@ -4,13 +4,15 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
+import Blog from '../Blog/Blog';
+import { blogs } from '../../FakeData';
 
 const Home = () => {
     return (
         <div>
             <div className="container px-10">
-                <div className="header mt-5 grid grid-cols-2">
+                <div className="header pt-5 grid grid-cols-2">
                     <div className="logo text-left">
                         <h3 className="text-2xl text-blue-500 font-bold">Bloguest</h3>
                     </div>
@@ -23,8 +25,12 @@ const Home = () => {
                         <input class="w-3/4 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Search" />
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search</button>
                     </div>
-                    <div className="blogs">
-
+                    <div className="blogs py-10">
+                        <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                            {
+                                blogs.map((blog, index) => <Blog blog={blog} key={index}></Blog>)
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
