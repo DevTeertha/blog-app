@@ -2,7 +2,7 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div style={{height: '100%'}} className="border flex items-center bg-gray-200">
+        <div style={{height: '100%'}} className="flex items-center bg-gray-200">
             <div class="w-full max-w-xs mx-auto">
                 <form class="border bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     <div class="mb-4">
