@@ -16,16 +16,19 @@ export const myContext = createContext();
 
 const App = () => {
   const [user, setUser] = useState(true);
+  const [blogs, setBlogs] = useState([]);
   const [addBlog, setAddBlog] = useState({
     title: "",
-    description: "",
-    img: ""
+    description: ""
   });
+  const [file, setFile] = useState(null);
 
   return (
     <myContext.Provider value={{
       userState: [user, setUser],
-      blogState: [addBlog, setAddBlog]
+      addBlogState: [addBlog, setAddBlog],
+      fileState: [file, setFile],
+      blogState: [blogs, setBlogs]
     }}>
       <Router>
         <Switch>
