@@ -1,6 +1,5 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { blogs } from '../../FakeData';
 import { myContext } from '../../App';
 
 const ViewBlog = () => {

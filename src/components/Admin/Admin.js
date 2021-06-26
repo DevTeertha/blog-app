@@ -1,9 +1,7 @@
 import React from 'react';
-import { Route, Link, Switch } from 'react-router-dom'
-import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import { Route, Switch } from 'react-router-dom'
 import AddBlog from './AddBlog/AddBlog';
 import DeleteBlog from './DeleteBlog/DeleteBlog';
-import BlogList from './BlogList/BlogList';
 import NavBar from './NavBar/NavBar';
 
 const style = {
@@ -24,9 +22,6 @@ const Admin = () => {
                         </Route>
                         <Route path="/admin/addBlog">
                             <AddBlog></AddBlog>
-                        </Route>
-                        <Route path="/admin/blogList">
-                            <BlogList></BlogList>
                         </Route>
                         <Route path="/admin/deleteBlog">
                             <DeleteBlog></DeleteBlog>

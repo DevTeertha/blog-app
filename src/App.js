@@ -10,7 +10,6 @@ import Admin from './components/Admin/Admin';
 import ViewBlog from './components/ViewBlog/ViewBlog';
 import Login from './components/Admin/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import AddBlog from './components/Admin/AddBlog/AddBlog';
 
 export const myContext = createContext();
 
