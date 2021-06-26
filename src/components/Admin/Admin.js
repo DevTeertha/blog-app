@@ -17,7 +17,7 @@ const Admin = () => {
                 <div style={style} className="bg-blue-500 w-2/12">
                     <NavBar></NavBar>
                 </div>
-                <div className="flex-initial border w-11/12">
+                <div style={{overflow:'scroll'}} className="flex-initial border w-11/12">
                     <Switch>
                         <Route exact path="/admin">
                             <AddBlog></AddBlog>

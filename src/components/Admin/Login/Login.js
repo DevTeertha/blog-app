@@ -56,31 +56,6 @@ const Login = () => {
                 var errorMessage = error.message;
                 alert("Email/Password Wrong! Please Try Again.")
             });
-
-        // fetch('http://localhost:5000/loginAdmin', {
-        //     method: 'post',
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify(login)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         if (data) {
-        //             localStorage.setItem('isLogin', data)
-        //             setUser(true)
-        //             setLogin({
-        //                 email: "",
-        //                 password: ""
-        //             })
-        //             e.target.reset();
-        //         }
-        //         else {
-        //             console.log("result ", data)
-        //             alert("Email/Password Wrong! Try Again.")
-        //         }
-        //     })
-        //     .catch(err => console.log("Error ", err))
-
-
         e.preventDefault();
     }
     return (
