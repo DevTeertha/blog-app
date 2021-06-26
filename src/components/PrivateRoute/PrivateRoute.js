@@ -3,11 +3,15 @@ import { myContext } from '../../App';
 import {
     Route,
     Redirect,
-  } from "react-router-dom";
+    useHistory,
+    useLocation
+} from "react-router-dom";
 
 const PrivateRoute = ({ children, ...rest }) => {
+
     const { userState } = useContext(myContext);
-    const [user] = userState;
+    const [user, setUser] = userState;
+
     return (
         <Route
             {...rest}

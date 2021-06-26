@@ -15,7 +15,11 @@ import AddBlog from './components/Admin/AddBlog/AddBlog';
 export const myContext = createContext();
 
 const App = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(null);
+  const [login, setLogin] = useState({
+    email: "",
+    password: ""
+  });
   const [blogs, setBlogs] = useState([]);
   const [addBlog, setAddBlog] = useState({
     title: "",
@@ -28,7 +32,8 @@ const App = () => {
       userState: [user, setUser],
       addBlogState: [addBlog, setAddBlog],
       fileState: [file, setFile],
-      blogState: [blogs, setBlogs]
+      blogState: [blogs, setBlogs],
+      loginState: [login, setLogin]
     }}>
       <Router>
         <Switch>

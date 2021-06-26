@@ -8,7 +8,8 @@ const DeleteBlog = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        if (blogs.length === 0) {
+        if (blogs.length >= 0) {
+            setLoading(true)
             fetch('http://localhost:5000/blogs')
                 .then(res => res.json())
                 .then(data => {
