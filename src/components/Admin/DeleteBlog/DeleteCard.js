@@ -6,7 +6,7 @@ const DeleteCard = ({ blog }) => {
 
     const deleteHandler = (id) => {
         setLoading(true)
-        fetch(`http://localhost:5000/deleteBlog/${_id}`, {
+        fetch(`https://powerful-depths-41881.herokuapp.com/deleteBlog/${_id}`, {
             method: 'DELETE'
         })
             .then(res => {

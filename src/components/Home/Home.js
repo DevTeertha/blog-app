@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(()=>{
         setLoading(true)
-        fetch('http://localhost:5000/blogs')
+        fetch('https://powerful-depths-41881.herokuapp.com/blogs')
         .then(res=> res.json())
         .then(data=>{
             setBlogs(data)

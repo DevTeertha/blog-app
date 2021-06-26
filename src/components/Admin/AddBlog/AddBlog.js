@@ -25,7 +25,7 @@ const AddBlog = () => {
         formData.append('title', addBlog.title);
         formData.append('description', addBlog.description);
         setLoading(true);
-        fetch('http://localhost:5000/addBlog', {
+        fetch('https://powerful-depths-41881.herokuapp.com/addBlog', {
             method: 'post',
             body: formData
         })
